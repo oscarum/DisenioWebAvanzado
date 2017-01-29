@@ -1,0 +1,16 @@
+.resultado{
+  display: none;
+}
+.campo{
+  border: 1px solid blue;
+  margin-top: 5%;
+  width: 100%;
+  height: 500px;
+}
+.objetivo{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  
+}

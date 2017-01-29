@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app><!--ng -app directiva de angular para indicar que es una aplicacion de  angular-->
+  <head>
+    <meta charset="utf-8">
+    <title>Clase Angular</title>
+    
+    <!--Angular siempre se coloca hasta arriba-->
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  </head>
+  <body>
+    <!--<h1>Hola Mundo HTML</h1>
+    <h1>{{"Hola Mundo Angular"}}</h1>
+
+    <div class="">
+      <h4>Filtros de angular</h4>
+      <span>DonaLDO</span><br>
+      <span>{{"DonaLDO" | lowercase}}</span><br>
+      <span>{{"DonaLDO" | lowercase}}</span>
+
+      <br><br>
+      <span>1350</span>
+      <br>
+      <span>{{1350 | currency}}</span>
+
+      <br><br>
+      <span>1257575287527527857</span><br>
+      <span>{{1257575287527527857 | number}}</span>
+
+    </div>
+    -->
+
+    <h4>ng-model en Angular</h4>
+    <p>
+      <label>Dime tu nombre:</label><br>
+      <input type="text" ng-model="nombre" placeholder="Aqui va tu nombre..."><!--directiva ng model ligar variables-->
+    </p>
+
+    <p>
+      <label>Tu nombre es: </label>{{nombre | uppercase}}
+    </p>
+
+    <p>
+      <label>Seleccionar pais:</label>
+      <select ng-model="pais">
+        <option value="1">Mexico</option>
+        <option value="2">EU</option>
+        <option value="3">Alemania</option>
+      </select>
+
+      <label>Tu pais es: </label>{{pais}}
+    </p>
+
+    <p>
+      <label>Seleccione género:</label><br>
+      <input type="radio" value="M" ng-model="genero">Masculino<br>
+      <input type="radio" value="F" ng-model="genero">Femenino <br>
+
+      <label>Tu genero es: </label>{{genero}}
+    </p>
+
+    <p>
+      <label>Pasatiempos:</label><br>
+      <input type="checkbox" ng-model="op1">Leer <br>
+      <input type="checkbox" ng-model="op2">Escuchar Musica <br>
+      <input type="checkbox" ng-model="op3">Deportes <br>
+      <input type="checkbox" ng-model="op4">Dibujar <br>
+    </p>
+    <label>A ti te gusta: </label> <br>{{op1}} <br>{{op2}} <br>{{op3}} <br>{{op4}}
+  </body>
+    <script type="text/javascript" src="js/app.js"></script>
+
+</html>

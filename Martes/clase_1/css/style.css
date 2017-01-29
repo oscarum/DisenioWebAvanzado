@@ -1,0 +1,22 @@
+.circulo{
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+  border-radius: 50px;/*Para que sea circulo*/
+  margin-top: 10px;
+}
+
+/* # para hacer referencia al ID*/
+#cuadrado{
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+.ejemplo{
+  height: 500px;
+  width: 200px;
+  background-color: black;
+  margin-top: 10px;
+}
